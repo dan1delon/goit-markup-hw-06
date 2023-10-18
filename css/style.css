@@ -57,10 +57,14 @@ margin: 0 auto;
     height: 56px;
     display: flex;
     align-content: center;
+    /* position: fixed;
+    width: 100vw;
+    z-index: 1; */
 }
 
 .header-container {
     display: flex;
+    align-items: center;
 }
  
 .header .container {
@@ -113,10 +117,6 @@ margin: 0 auto;
     color: #404bbf;
 }
 
-.address {
-    display: flex;
-}
-
 .address-list {
     display: none;
 }
@@ -133,8 +133,7 @@ margin: 0 auto;
     border-radius: 2px;
     background-color: #404bbf;
     left: 0;
-    bottom: -1px;
-    margin-bottom: -3px;
+    bottom: -3px;
 }
 
 .address-link:active, .address-link:hover, .address-link:focus {
@@ -714,8 +713,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 584px;
-    width: 408px;
+    width: 288px;
+    height: 623px;
     min-height: 584px;
     flex-shrink: 0;
     border-radius: 4px;
@@ -762,11 +761,9 @@ fill: #FFFFFF;
 }
 
 .modal-header {
-    width: 360px;
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -886,6 +883,8 @@ fill: #FFFFFF;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    display: flex;
+    justify-content: center;
 }
 
 .policy-text {
@@ -935,6 +934,7 @@ fill: #FFFFFF;
     
     .header {
         height: 72px;
+        display: block;
     }
 
     .header .container {
@@ -949,21 +949,20 @@ fill: #FFFFFF;
         margin-right: 120px;
     }
 
-    .address {
-
-    }
-
     .navigation-list {
         display: flex;
         gap: 40px;
     }
 
+    .address {
+        margin-left: auto;
+    }
+
     .address-list {
-    justify-content: flex-end;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 12px;
     }
@@ -1070,6 +1069,16 @@ fill: #FFFFFF;
     .footer-text {
         max-width: 264px;
     }
+
+    .modal {
+        width: 408px;
+        height: 584px;
+    }
+
+    .modal-header {
+    width: 360px;
+    }
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -1080,6 +1089,11 @@ fill: #FFFFFF;
 
     .logo {
         margin-right: 76px;
+    }
+
+    .address-list {
+        flex-direction: row;
+        gap: 40px;
     }
 
     .address-link {
