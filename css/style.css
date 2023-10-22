@@ -636,7 +636,7 @@ fill: #f4f4fd;
 .input-footer {
     width: 288px;
     height: 40px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     flex-shrink: 0;
@@ -652,7 +652,7 @@ fill: #f4f4fd;
 
 .input-footer::placeholder {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 2;
     letter-spacing: 0.04em;
 }
